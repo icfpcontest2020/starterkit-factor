@@ -11,8 +11,8 @@ SYMBOL: player-key
 
 : api-url ( -- url ) 
   server-url get >url
-  "playerKey"
   player-key get
+  "playerKey"
     set-query-param ;
 
 : contact-server ( -- body ) api-url http-get swap code>> 200 assert= ;
