@@ -1,5 +1,5 @@
 USING: kernel io http.client command-line namespaces arrays sequences formatting urls accessors ;
-IN: solution
+IN: app
 
 SYMBOL: server-url
 SYMBOL: player-key
